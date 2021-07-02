@@ -304,9 +304,9 @@ dataV = xlsread('Preverensi.xlsx');
 nilai = sort(dataV,'descend');
 
 opts2 = detectImportOptions('DataAlternative.xlsx'); %mendeteksi file DataAlternative.xlsx
-opts2.SelectedVariableNames = [1]; %memilih hanya kolom Nama Rumah
+opts2.SelectedVariableNames = [1]; %memilih hanya kolom Nama Motor
 
-nama = readmatrix('DataAlternative.xlsx',opts2); %mengambil nama rumah dari file dan menyimpan di var nama
+nama = readmatrix('DataAlternative.xlsx',opts2); %mengambil nama motor dari file dan menyimpan di var nama
 
 %perulangan untuk mencari nama rumah dari 20 nilai terbaik tadi
 for i=1:m
